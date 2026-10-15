@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import TodoList from "./components/TodoList"
+import Anagrafica from "./components/Anagrafica"
 
 function App() {
   const [n, setN] = useState(0)
@@ -22,16 +23,19 @@ function App() {
 
   return (
     <>
-      <TodoList></TodoList>
-      <h1>ciao</h1>
-      <button onClick={handleClick}>{n}</button>
+      {false && <Anagrafica />}
+      {true && <TodoList />}
+      {false && <div>
+        <h1>ciao</h1>
+        <button onClick={handleClick}>{n}</button>
 
-      <span
-        id="toggler"
-        className={light ? "acceso" : ""}
-        onClick={toggleLight}>
-        <div className="thumb"></div>
-      </span>
+        <span
+          id="toggler"
+          className={light ? "acceso" : ""}
+          onClick={toggleLight}>
+          <div className="thumb"></div>
+        </span>
+      </div>}
     </>
   )
 }
