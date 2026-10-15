@@ -1,0 +1,24 @@
+#toggler {
+  background: lightgray;
+  border-radius: 20px;
+  width: 70px;
+  height: 30px;
+  padding: 2px;
+  transition: background 0.2s ease;
+}
+
+#toggler.acceso {
+  background: lightgreen;
+}
+
+#toggler .thumb {
+  width: 50px;
+  background: white;
+  border-radius: 20px;
+  height: 100%;
+  transition: translate 0.2s ease;
+}
+
+#toggler.acceso .thumb {
+  translate: 20px 0px;
+}

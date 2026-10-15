@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
+import Catalog from './components/Catalog'
+import PassFunction from './components/PassFunction'
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
 
   return (
     <>
+      <PassFunction count={count} />
       <NavBar />
+      <Catalog />
       <button onClick={increase}>{count}</button>
       <h1>Ciao</h1>
       <p>Questa è la nostra prima app react</p>
