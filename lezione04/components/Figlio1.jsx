@@ -1,10 +1,9 @@
-import { useContext } from "react"
+import useUser from "../hooks/useUser"
 import Figlio2 from "./Figlio2"
-import { contesto1 } from "../src/App"
 
 function Figlio1() {
 
-  const {setUser} = useContext(contesto1)
+  const {setUser} = useUser()
 
   return (
     <>
